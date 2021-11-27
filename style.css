@@ -1,0 +1,889 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --org:rgb(120, 81, 165);
+    --bl:black;
+    --wt:white;
+    --gd:rgba(221, 235, 230, 0.726);
+    --ooo:(90deg,#061a23 0,#06373a 100%);
+        
+}
+
+/* contEmailDiv section $$$$$$$$$ */
+
+.contEmailDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+}
+.contEmailDiv i{
+    color: var(--wt);
+}
+.ee{
+    display: flex;
+    align-items: center;
+}
+.ee h6{
+    margin: 10px 10px;
+    font-size: 18px;
+}
+/* html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+} */
+
+header{
+    /* position: static;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: white; */
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.87);
+    align-items: center;
+}.logo{
+    margin: 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    margin: 0px 5px;
+}
+nav a{
+    text-decoration: none;
+    color: #130f40;
+    padding: 8px 10px;
+    font-size: 20px;
+}
+.icons div{
+    color: black;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 10px rgb(231, 231, 231);
+}
+.signUpDiff{
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: white;
+}
+.icons div:hover,nav a:hover,header .shopping-cart a:hover{
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: white;
+    cursor: pointer;
+    transition:all .3s linear;
+}
+#menu-btn{
+    display: none;
+}
+@media screen and (max-width:850px) {
+    #menu-btn{
+        display: inline-block;
+    }
+    nav {
+        position: absolute;
+        top: 7rem;left: -110%;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        display: block;
+    }  
+    nav li{
+        margin: 5px;
+    }
+    nav a{
+        display: inline-block;
+        font-size: 25px;
+        padding: 10px;
+    }
+    nav.active{
+        left: 0px;
+        transition: all 0.4s ease-in;
+    }
+}
+
+/* sliderSide $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.sl{
+    display: flex !important;
+}
+.sliderAreao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(picture/aaaaaa.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width:819px) {
+    .sliderArea{
+        justify-content: center;
+    }
+}
+.sliderAreao a{
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+    font-size: 1.2rem !important;
+    border-radius: 10px;
+    border: 2px solid var(--wt);
+    box-shadow: 1px 1px 5px rgb(95, 93, 93);
+    font-size: 1rem;
+    text-decoration: none;  
+}
+
+.sliderAreao .sliderText{
+    max-width: 32rem;
+    color: var(--wt);
+}
+.sliderText h1{
+    margin: 1rem 10px;
+    font-size: 2.5rem;
+}
+.sliderText p{
+    margin: 1rem 10px;
+    font-size: 1.1rem;
+}
+.sliderBtn{
+    display: flex;
+}
+.sliderText a{
+    margin: 2rem 5px;
+}
+
+.sliderSignup{
+    margin: 1rem;
+    border-radius: 15px;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 2px 2px 6px rgb(32, 32, 32);
+    text-align: center;
+    color: var(--wt);
+}
+.sliderSignup input{
+    padding: 5px 8px;
+    border-radius: 10px;
+    border:0.5px solid rgb(190, 187, 187);
+    font-size: 1rem;
+    margin: 10px 10px;
+    width:100%;
+    height: 2rem;
+}
+
+/* flexible $$$$$$$$$$$$$$$$$$$$ */
+.flexibleh1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.flexiblepara{
+    text-align: center;
+    font-size: 1.3rem;
+    margin:3rem 15px ;
+}
+.flexible a{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+    font-size: 1.2rem !important;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-decoration: none;   
+}
+
+.flexible{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.flexible i{
+    font-size: 4rem;
+    color: rgb(30, 30, 47);
+}
+.flexible h1{
+    font-size: 1.7rem;
+}
+.flexible p{
+    font-size: 1.1rem;
+    color: rgb(90, 89, 89);
+}
+.cart{
+    max-width: 270px;
+    margin: 1rem 1rem;
+    border:0.1px solid rgb(214, 207, 207);
+    padding: 20px 15px;
+    border-radius: 3px;
+}
+
+/* signUpOrder $$$$$$$$$$$$$$$$$ */
+.signUpOrder .order a{
+    color: var(--wt);
+    font-size: 1rem;
+    text-decoration: none;
+    width: 55%;
+    text-align: center;
+    padding: 10px 50px;
+    margin: 1rem 0;
+    background-color: var(--wt);
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    display: block;
+}
+.signUpOrder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.signUpOrder .detail{
+    max-width:550px;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signUpOrder .detail h1{
+    font-size: 2.3rem;
+}
+.signUpOrder .detail p{
+    font-size: 1.2rem;
+}
+.detail img{
+    width: 7rem;
+    height: 5rem;
+    margin: 18px;
+}
+.centerDiv a{
+    color: var(--wt);
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    border:0.5px solid rgb(190, 187, 187);
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+    margin-top: 8px;
+    width: 93%;
+    text-align: center;
+}
+.signUpOrder .order{
+    max-width: 450px;
+    margin: 0 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.5px 0.5px 10px rgb(195, 190, 190);
+}
+.signUpOrder .ooa{
+    padding: 5px 8px;
+    border-radius: 10px;
+    /* border-color: rgb(202, 202, 202); */
+    border:0.5px solid rgb(190, 187, 187);
+    font-size: 1rem;
+    margin: 5px 0px;
+}
+.signUpOrder .oo{
+    width:45%;
+    height: 2rem;    
+}
+.signUpOrder .phone{
+    width: 95%;
+    height: 2rem;
+}
+.signUpOrder .massage{
+    width: 95%;
+    height: 12rem;
+}
+.signUpOrder>.order button{
+    
+}
+@media screen and (max-width:550px) {
+    .signUpOrder .order{
+        margin-top: 2rem;
+    }
+    .signUpOrder .oo{
+        width:95%;   
+    }
+    .signUpOrder .order{
+        padding: 1rem;
+        max-width: 400px;
+    }
+    .detail img{
+        width: 4rem;
+        height: 2rem;
+        margin: 10px 5px;
+    }
+}
+@media screen and (max-width:400px) {
+    .signUpOrder .ooa{
+        width:90%;   
+    }
+    .signUpOrder .order{
+        padding: 1rem;
+        max-width: 300px;
+    }
+    .signUpOrder>.order button{
+        width: 95%;
+    }
+}
+
+/* expertise $$$$$$$$$$$$$$$$$$$$ */
+
+.expertise{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 10px ;
+}
+.expertise p{
+    font-size: 16px;
+}
+.expertise .eBox{
+    max-width: 250px;
+    height: 220px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.expertise .eB{
+    
+    color: var(--wt);
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+}
+ /* Why US $$$$$$$$$$$$$$$$$$$$$ */
+
+.whyus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.whyh1{
+    margin-top: 2rem;
+    margin-bottom: 10px;
+     font-size: 2.5rem;
+}
+.whyp{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 35rem;
+}
+
+.whyBoxMain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.whyBoxMain .whyBox{
+    max-width: 280px;
+    min-height: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px rgb(94, 92, 92);
+}
+.whyBoxMain .whyBox .ih1{
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+.whyBoxMain .whyBox i{
+    font-size: 1.5rem;
+    margin: 0px 10px;
+}
+.whyBoxMain .whyBox h2{
+    font-size: 1.7rem;
+}
+.whyBoxMain .whyBox p{
+    margin: 0px 10px;
+    font-size: 1.1rem;
+    color: rgb(83, 82, 82);
+}
+
+/* diliveryOnTime $$$$$$$$$$$$$$$$$$$$ */
+
+.diliveryOnTime{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3.5rem 10px;
+}
+.DOTBox{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px rgb(94, 92, 92);
+}
+.DOTBox p{
+    font-size: 1.4rem;
+    color: rgb(83, 82, 82);
+}
+.DOTBox i{
+    font-size: 3.5rem;
+    margin: 0 5px;
+}
+.DOTBox h2{
+    margin: 0 10px;
+    font-size: 1.8rem;
+}
+.firstDOT{
+    display: flex;
+    align-items: center;
+}
+
+
+/* iconSection $$$$$$$$$$$$$$$$$$$$ */
+
+.iconSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.iconSectionBox {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    max-width: 250px;
+}
+.iconSectionBox i{
+    font-size: 3.8rem;
+    margin: 0 7px;
+    
+}
+.iconText{
+    margin: 0 10px;
+}
+.iconText h1{
+    margin-bottom: 0px;
+}
+.iconText p{
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* confidenceSection $$$$$$$$$$$$$ */
+
+.confidenceSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0px;
+}
+.confidenceText{
+    max-width: 550px;
+    margin: 10px 10px;
+}
+.confidenceText p{
+    font-size: 1.3rem;
+    color: rgb(110, 107, 107);
+    margin:10px;
+}
+.confidenceText h1{
+    margin:10px;
+}
+.confidencePersonAll{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    max-width: 550px;
+}
+.confidencePersonAll .person{
+    margin: 1rem 1.5rem;
+    text-align: center;
+}
+.confidencePersonAll .person img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.confidencePersonAll .person h3{
+    margin: 5px 0;
+}
+.confidencePersonAll .person p{
+    margin: 5px 0;
+    color: rgb(110, 107, 107);
+}
+
+
+/* sixPictureSection $$$$$$$$$$$$$$$$ */
+
+.sixPictureSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sixPictureSection img{
+    width: 140px;
+    height: 50px;
+    margin: 2rem;
+}
+
+
+/* orderInput $$$$$$$$$$$$$$$$$$$$$ */
+.centerDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    margin: 2rem 0;
+}
+.centerDiv h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 20px;
+    max-width: 26rem;
+    color: var(--wt);
+}
+@media screen and (max-width:400px) {
+    .centerDiv h1{
+        font-size: 2.5rem;
+        margin: 2rem 4px;
+    }
+}
+.orderInput{
+    max-width: 38rem;
+    margin: 0 1rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--wt);
+    box-shadow: 0.5px 0.5px 10px rgb(195, 190, 190);
+}
+.orderInput .aa{
+    width:46%;
+    height: 2rem; 
+    margin: 1rem 2rem;
+}
+.orderInput .rrr{
+    padding: 5px 8px;
+    border-radius: 10px;
+    border:0.5px solid rgb(190, 187, 187);
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+.orderInput .massage{
+    width: 95%;
+    height: 12rem;
+}
+.orderInput button{
+    border:0.5px solid rgb(190, 187, 187);
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+    margin-top:1.2rem;
+    width: 98%;
+}
+
+@media screen and (max-width:600px) {
+    .orderInput{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .orderInput .aa{
+        width:95%;
+        height: 2rem; 
+        margin: 1rem 2rem;
+    }   
+}
+
+
+/* professionalBox $$$$$$$$$$$$$$$$$$ */
+
+.professionalBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+.proTextArea{
+    max-width: 37rem;
+}
+.proTextArea h1{
+    margin: 1.2rem;
+}
+.proTextArea h2{
+    margin: 1.2rem;
+}
+.proTextArea p{
+    font-size: 1.4rem;
+    margin: 1.2rem;
+}
+.professionalBox img{
+    max-width: 85%;
+    margin: 1rem;
+}
+
+
+/* secondLast $$$$$$$$$$$$$ */
+
+.secondLast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 20rem;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+}
+.secondLast h1{
+    margin: 1rem 10px;
+    font-size: 2.5rem;
+    color: var(--wt);
+}
+.secondTextBtn{
+    margin: 1rem 2rem;
+    max-width: 50rem;
+}
+.secondTextBtn p{
+    font-size: 1.3rem;
+    color: var(--wt);
+}
+
+.secondTextBtn a{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+    font-size: 1.2rem !important;
+    border-radius: 10px;
+    border: 2px solid var(--wt);
+    box-shadow: 1px 1px 5px rgb(95, 93, 93);
+    font-size: 1rem;
+    text-decoration: none;   
+}
+
+/* header .search-form{
+    position: absolute;
+    top:15%; right: -160%;
+    max-width: 30rem;
+    height:50px;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* box-shadow: var(--box-shadow); */
+
+header .search-form.active{
+    right:5%;
+    transition: .4s linear;
+}
+header .search-form input{
+    height:100%;
+    width:100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:black;
+    padding:0 1.5rem;
+    border: 0px solid white;
+}
+
+header .search-form label{
+    font-size: 25px;
+    padding-right: 1.5rem;
+    color:black;
+    cursor: pointer;
+}
+
+header .shopping-cart{
+    position: absolute;
+    top:15%; right: -140%;
+    overflow: hidden;
+    text-align: center;
+    max-width:350px;
+    background-color: white;
+    border-radius: 10px;
+}
+header .shopping-cart.active{
+    right:5%;
+    transition: .4s linear;
+}
+header .shoppingBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .shoppingBox img{
+    width: 30%;
+    height: 30%;
+}
+header .shoppingBox .content{
+    margin-right:30px;    
+}
+header .shoppingBox i{
+    font-size: 25px;
+}
+header .total{
+    font-size: 35px;
+    margin: 0px;
+}
+
+header .shopping-cart a{
+    display: block;
+    margin: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+}
+header .login-form{
+    position: absolute;
+    top: 15%; right: -160%;
+    background-color: white;
+    border: 10px;
+    max-width: 290px;
+    text-align: center;
+}
+header .login-form.active{
+    right:5%;
+    transition: .4s linear;   
+}
+header .input{
+    display: flex;
+    flex-direction: column;
+}
+header .input input{
+    width: 80%;
+    height: 30px;
+    margin: 5px 0px;
+    padding: 10px;
+    align-self: center;
+    font-size: 18px;
+    background-color: rgb(240, 240, 240);
+    border: 0px solid white;
+    border-radius: 5px;
+}
+header .forget, header .create {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 15px 8px;
+}
+.forget p,.create p{
+    margin: 0px;
+}
+header .forget a, header .create a{
+    margin: 0px 5px;
+    color: palegreen;
+}
+header .login-form .loginBtn{
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:320px;) {
+    header .search-form.active{
+        right:2px;
+        transition: .4s linear;
+    }
+    header .shopping-cart.active{
+        right:2px;
+        transition: .4s linear;
+    }
+    header .login-form.active{
+        right:2px;
+        transition: .4s linear;   
+    }
+    header .login-form{
+        width: 290px;
+    }
+} 
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 3rem 0;
+    background-image: linear-gradient(180deg, rgba(32, 88, 62, 0.993),rgb(81, 128, 106));
+    color: var(--wt);
+}
+@media screen and (max-width:790px) {
+    footer{
+        justify-content: center;
+    }
+}
+.foSection1,.foSection2,.foSection3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    max-width: 18rem;
+}
+.foSection1 img{
+    max-width: 15rem;
+    max-width: 12rem;
+}
+.foSection3 img{
+    max-width: 10rem;
+    max-width: 8rem;
+    margin: 10px;
+}
+footer .emailPara{
+    display: flex;
+    align-items: center;
+}
+footer .emailPara p{
+    margin: 1rem;
+}
+footer p{
+    font-size: 1.2rem;
+}
+.final{
+    background-image: linear-gradient(180deg,rgb(81, 128, 106), rgba(32, 88, 62, 0.993));
+    color: var(--wt);
+    text-align: center;
+    margin: 0px;
+    padding: 3rem 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
